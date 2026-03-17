@@ -223,12 +223,7 @@ const buildBrandingLines = (
     lines.push(createFramedLine(`│ ${eyes} │`, scoreColorizer(`│ ${eyes} │`)));
     lines.push(createFramedLine(`│ ${mouth} │`, scoreColorizer(`│ ${mouth} │`)));
     lines.push(createFramedLine("└─────┘", scoreColorizer("└─────┘")));
-    lines.push(
-      createFramedLine(
-        "react-dr",
-        "react-dr",
-      ),
-    );
+    lines.push(createFramedLine("react-dr", "react-dr"));
     lines.push(createFramedLine(""));
 
     const scoreLinePlainText = `${scoreResult.score} / ${PERFECT_SCORE}  ${scoreResult.label}`;
@@ -240,12 +235,7 @@ const buildBrandingLines = (
     );
     lines.push(createFramedLine(""));
   } else {
-    lines.push(
-      createFramedLine(
-        "react-dr",
-        "react-dr",
-      ),
-    );
+    lines.push(createFramedLine("react-dr", "react-dr"));
     lines.push(createFramedLine(""));
     lines.push(createFramedLine(noScoreMessage, highlighter.dim(noScoreMessage)));
     lines.push(createFramedLine(""));
