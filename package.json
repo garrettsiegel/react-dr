@@ -1,0 +1,35 @@
+{
+  "name": "react-dr-cli-workspace",
+  "private": true,
+  "homepage": "https://github.com/garrett/react-dr#readme",
+  "bugs": {
+    "url": "https://github.com/garrett/react-dr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrett/react-dr.git"
+  },
+  "scripts": {
+    "dev": "pnpm --filter react-dr-cli run dev",
+    "build": "pnpm --filter react-dr-cli run build",
+    "test": "pnpm --filter react-dr-cli run test",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "dependencies": {
+    "knip": "5.83.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.27.0",
+    "oxfmt": "0.32.0",
+    "oxlint": "1.47.0",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  },
+  "packageManager": "pnpm@10.29.1"
+}
